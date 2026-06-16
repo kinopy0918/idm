@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>株式会社IDM ｜ 構想を、成果に変える。</title>
+<meta name="description" content="株式会社IDM（International Making Dots）は、整理・言語化・戦略・数値設計・効果検証の5つの工程で、企業と地域の課題解決に最初から最後まで伴走するパートナーです。" />
+<meta property="og:title" content="株式会社IDM ｜ 構想を、成果に変える。" />
+<meta property="og:description" content="「やりたい」を、測れる成果に。企業と地域の課題解決に伴走する会社。" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="株式会社IDM" />
+<meta property="og:locale" content="ja_JP" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="株式会社IDM ｜ 構想を、成果に変える。" />
+<meta name="twitter:description" content="「やりたい」を、測れる成果に。企業と地域の課題解決に伴走する会社。" />
+<meta name="theme-color" content="#0f1f3d" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230f1d44'/><circle cx='16' cy='16' r='5' fill='%232b50c8'/></svg>" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<script>document.documentElement.classList.remove("no-js");document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+<!-- ===== Intro loader ===== -->
+<div class="loader" id="loader">
+  <div class="loader__inner">
+    <span class="loader__dot"></span>
+    <span class="loader__word">IDM</span>
+  </div>
+</div>
+
+<!-- ===== Scroll progress ===== -->
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- ===== Header ===== -->
+<header class="site-header" id="header">
+  <a href="#top" class="logo" aria-label="IDM ホーム">
+    <span class="logo__mark"></span>
+    <span class="logo__text">IDM</span>
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav" id="nav">
+    <a href="#method">事業</a>
+    <a href="#works">実績</a>
+    <a href="#join">仲間募集</a>
+    <a href="#about">会社概要</a>
+    <a href="#contact" class="nav__cta">お問い合わせ</a>
+  </nav>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="top">
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <canvas id="hero-dots" aria-hidden="true"></canvas>
+  <div class="hero__bg-text" aria-hidden="true">IDM</div>
+  <div class="hero__deco" aria-hidden="true">
+    <div class="hero__deco-card">
+      <span class="hero__deco-num">05</span>
+      <span class="hero__deco-label">独自プロセス</span>
+    </div>
+    <div class="hero__deco-card hero__deco-card--alt">
+      <span class="hero__deco-num">BtoB</span>
+      <span class="hero__deco-label">伴走支援</span>
+    </div>
+  </div>
+  <div class="hero__copy">
+    <p class="hero__eyebrow reveal">International Making Dots</p>
+    <h1 class="hero__title">
+      <span class="reveal">構想を、</span>
+      <span class="reveal">成果に変える。</span>
+    </h1>
+    <p class="hero__lead reveal">
+      整理し、言葉にし、戦略を描き、数値で測り、検証する。<br />
+      株式会社IDMは、企業と地域の課題解決に、<br class="pc" />最初から最後まで伴走します。
+    </p>
+    <div class="hero__actions reveal">
+      <a href="#contact" class="btn btn--primary">事業のご相談</a>
+      <a href="#method" class="btn btn--text">私たちの仕事を見る →</a>
+    </div>
+  </div>
+  <div class="hero__scroll-hint reveal" aria-hidden="true">Scroll</div>
+</section>
+
+<!-- ===== Trust strip ===== -->
+<div class="trust">
+  <div class="trust__item"><strong>2017</strong><span>設立・別府発</span></div>
+  <div class="trust__item"><strong data-count="4">0</strong><span>事業領域</span></div>
+  <div class="trust__item"><strong data-count="5" data-suffix=" STEPS">0</strong><span>独自メソッド</span></div>
+  <div class="trust__item"><strong>BtoB / 自治体</strong><span>伴走支援</span></div>
+</div>
+
+<!-- ===== 01 課題 ===== -->
+<section class="issue" id="issue">
+  <div class="container">
+    <div class="issue__left">
+      <span class="sec-num reveal">01</span>
+      <p class="section-label reveal">THE ISSUE</p>
+      <h2 class="issue__title split">多くの「やりたい」は、<br />形にならないまま終わる。</h2>
+    </div>
+    <div class="issue__right">
+      <p class="issue__body reveal">
+        アイデアや構想はある。けれど、それを <strong>誰にでも伝わる言葉にする力</strong>、
+        <strong>成果を測る設計</strong>、そして <strong>続けていく仕組み</strong> が欠けていると、
+        取り組みは途中で立ち消えになります。
+      </p>
+      <p class="issue__body reveal">
+        IDMは、その三つを補い、構想を実行と成果へつなぎます。整理から始まり、言語化し、戦略を立て、数値で測り、検証する——一気通貫の伴走で、「やりたい」を確かな成果に変えます。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 02 IDMとは ===== -->
+<section class="define" id="define">
+  <div class="container">
+    <span class="sec-num reveal">02</span>
+    <p class="section-label reveal">WHO WE ARE</p>
+    <h2 class="define__statement split">
+      一社ごと、一人ごとの「個性」に光を当て、<br />
+      <em>可視化</em>し、その<em>価値を最大化</em>する。
+    </h2>
+    <p class="define__sub reveal">
+      私たちは、ばらばらに散らばった「やりたい」という点を整理し、線でつなぎ、
+      確かな成果へと育てる伴走者です。マーケティングの一部だけ、戦略の一部だけ、ではなく、
+      課題の整理から成果の検証まで、一気通貫で関わります。
+    </p>
+  </div>
+</section>
+
+<!-- ===== 03 メソッド ===== -->
+<section class="method" id="method">
+  <div class="container">
+    <div class="method__head">
+      <span class="sec-num reveal">03</span>
+      <p class="section-label reveal">OUR METHOD</p>
+      <h2 class="method__title split">「やりたい」を、成果に変える5つの工程。</h2>
+      <p class="method__intro reveal">場当たり的な施策ではなく、再現性のある一連のプロセスとして提供します。</p>
+    </div>
+
+    <ol class="steps">
+      <li class="step reveal">
+        <span class="step__num">01</span>
+        <div class="step__body">
+          <h3>整理</h3>
+          <p>絡み合った要望や課題を、ひとつずつ切り分ける。論点を構造化し、本当に解くべき問いを定めます。</p>
+        </div>
+      </li>
+      <li class="step reveal">
+        <span class="step__num">02</span>
+        <div class="step__body">
+          <h3>言語化</h3>
+          <p>曖昧な構想を、関係者の誰もが同じ絵を描ける言葉にする。合意形成と意思決定の土台をつくります。</p>
+        </div>
+      </li>
+      <li class="step reveal">
+        <span class="step__num">03</span>
+        <div class="step__body">
+          <h3>戦略設計</h3>
+          <p>限られた資源を、最も効果の大きい一手に集中させる。実行可能な道筋とロードマップに落とし込みます。</p>
+        </div>
+      </li>
+      <li class="step reveal">
+        <span class="step__num">04</span>
+        <div class="step__body">
+          <h3>数値設計</h3>
+          <p>何をもって成功とするか、指標とKPIを先に定める。成果が測れる状態を、施策の前に用意します。</p>
+        </div>
+      </li>
+      <li class="step reveal">
+        <span class="step__num">05</span>
+        <div class="step__body">
+          <h3>効果検証</h3>
+          <p>数値で結果を確かめ、改善を重ねる。一度きりで終わらせず、再現性のある成果へと育てます。</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== 04 実績 ===== -->
+<section class="works" id="works">
+  <div class="container">
+    <div class="works__head">
+      <span class="sec-num reveal">04</span>
+      <p class="section-label reveal">FIELDS &amp; OUTCOMES</p>
+      <h2 class="works__title split">手がけてきた、領域と成果の型。</h2>
+      <p class="works__note reveal">守秘のため個別の社名は伏せています。繰り返し成果を出してきた領域と、その型をご紹介します。</p>
+    </div>
+
+    <div class="works__grid">
+      <article class="field reveal">
+        <h3>事業開発・業務変革</h3>
+        <p>AI・デジタルを用いた業務の再設計（BPR / BPO）、新規事業の立ち上げ支援。</p>
+        <p class="field__type">曖昧な構想を、実行できる計画へ。</p>
+      </article>
+      <article class="field reveal">
+        <h3>マーケティング・プロモーション</h3>
+        <p>企画・動画・SNS・Web・記事・多言語翻訳まで、伝える設計を一気通貫で。</p>
+        <p class="field__type">「伝わらない」を、「届く」へ。</p>
+      </article>
+      <article class="field reveal">
+        <h3>リサーチ・可視化</h3>
+        <p>顧客・ユーザーの声を集め、意思決定に使えるデータへと翻訳する。</p>
+        <p class="field__type">勘や思い込みを、根拠へ。</p>
+      </article>
+      <article class="field reveal">
+        <h3>教育・人材育成</h3>
+        <p>プログラミングや情報リテラシーの出前授業など、次世代に学びの機会を。</p>
+        <p class="field__type">一人の興味に、最初の機会を。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 04.5 Tech / Lab ===== -->
+<section class="lab" id="lab">
+  <canvas id="lab-canvas" aria-hidden="true"></canvas>
+  <div class="container lab__inner">
+    <span class="sec-num reveal" style="color:rgba(155,180,255,.6)">04.5</span>
+    <p class="section-label section-label--light reveal">TECHNOLOGY</p>
+    <h2 class="lab__title split">技術は、いちばん雄弁な実績だ。</h2>
+    <p class="lab__body reveal">
+      このサイト自体が、私たちの仕事の証明です。WebGLによる別府の湯けむり表現、
+      AIを用いた業務設計、データの可視化——「作れること」を、見て、触れて、確かめてください。
+    </p>
+    <ul class="lab__tags">
+      <li class="reveal">WebGL / シェーダー表現</li>
+      <li class="reveal">AI・自動化 / BPR・BPO</li>
+      <li class="reveal">データ可視化・ダッシュボード</li>
+      <li class="reveal">Web制作 / インタラクション設計</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== 05 思想 ===== -->
+<section class="vision" id="vision">
+  <div class="container">
+    <span class="sec-num reveal">05</span>
+    <p class="section-label reveal">PHILOSOPHY</p>
+    <p class="vision__lead split">世界は、せまい。</p>
+    <p class="vision__body reveal">
+      落ち着いて見渡せば、自分に関係のないものはなく、手が届かない場所もない。<br />
+      想像力を研ぎ澄ませば、違う世界に住む者同士も、互いの壁を超えられる。
+    </p>
+
+    <div class="mvv">
+      <div class="mvv__item reveal">
+        <span class="mvv__key">MISSION</span>
+        <p>個性が"つながる"回路を設計する。異なる才能を、仕組みとテクノロジーで接続する。</p>
+      </div>
+      <div class="mvv__item reveal">
+        <span class="mvv__key">VISION</span>
+        <p>すべての個性に、スポットライトを。正しく可視化され、価値が最大化される状態をつくる。</p>
+      </div>
+      <div class="mvv__item reveal">
+        <span class="mvv__key">VALUE</span>
+        <p>すべて自分ごと。大きく考える。変数はどこか——影響できる一点に集中する。</p>
+      </div>
+    </div>
+
+    <p class="vision__beppu reveal">
+      中期テーマ「<em>別府孝行</em>」——お世話になった大分・別府への、本気の恩返しを志として。
+    </p>
+  </div>
+</section>
+
+<!-- ===== 06 仲間募集 ===== -->
+<section class="join" id="join">
+  <div class="container join__grid">
+    <div>
+      <span class="sec-num reveal">06</span>
+      <p class="section-label reveal">JOIN US</p>
+      <h2 class="join__title split">専門性という一点を持つ方と、<br />プロジェクトを組みます。</h2>
+    </div>
+    <div>
+      <p class="join__body reveal">
+        IDMは少人数の会社です。けれど一人では終わりません。プロジェクトごとに、最適な個性が集まってチームになる。
+        私たち自身が「個性がつながる回路」そのものです。業務委託として、共に課題解決に取り組む仲間を募集しています。
+      </p>
+      <ul class="join__list">
+        <li class="reveal">「やりたい」を整理し、言葉にできる方</li>
+        <li class="reveal">数値で語り、成果まで見届けられる方</li>
+        <li class="reveal">専門性という、確かな一点を持つ方</li>
+      </ul>
+      <a href="#contact" class="btn btn--outline reveal">業務委託パートナーとして話す</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 07 CTA ===== -->
+<section class="cta" id="contact">
+  <div class="container cta__inner">
+    <h2 class="cta__title split">その一点を、ご一緒に。</h2>
+    <p class="cta__lead">事業のご相談も、仲間としての参加も、まずはお気軽にご連絡ください。</p>
+    <div class="cta__actions">
+      <a href="mailto:contact@idm-drone.co.jp?subject=ご相談" class="btn btn--light">事業のご相談</a>
+      <a href="mailto:contact@idm-drone.co.jp?subject=パートナー応募" class="btn btn--ghost-light">仲間として参加する</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer" id="about">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="logo__mark"></span>
+        <span class="footer__name">株式会社IDM</span>
+      </div>
+      <p class="footer__tagline">構想を、成果に変える。</p>
+    </div>
+    <dl class="footer__info">
+      <div><dt>商号</dt><dd>株式会社IDM（International Making Dots）</dd></div>
+      <div><dt>設立</dt><dd>2017年5月26日</dd></div>
+      <div><dt>所在地</dt><dd>大分県別府市駅前本町9-20</dd></div>
+      <div><dt>体制</dt><dd>少人数 ＋ プロジェクト型の業務委託チーム</dd></div>
+      <div><dt>事業内容</dt><dd>事業開発・業務変革 / マーケティング / リサーチ / 教育</dd></div>
+      <div><dt>お問い合わせ</dt><dd>contact@idm-drone.co.jp</dd></div>
+    </dl>
+    <p class="footer__copy">© 2017–2026 株式会社IDM</p>
+  </div>
+</footer>
+
+<script src="js/hero-steam.js" defer></script>
+<script src="js/hero-dots.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>
