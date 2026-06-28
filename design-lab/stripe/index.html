@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>株式会社IDM ｜ 構想を、成果に変える。</title>
+<meta name="description" content="株式会社IDM（International Making Dots）は、整理・言語化・戦略・数値設計・効果検証の5つの工程で、企業と地域の課題解決に最初から最後まで伴走するパートナーです。" />
+<meta property="og:title" content="株式会社IDM ｜ 構想を、成果に変える。" />
+<meta property="og:description" content="「やりたい」を、測れる成果に。企業と地域の課題解決に伴走する会社。" />
+<meta property="og:type" content="website" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="theme-color" content="#533afd" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231c1e54'/><circle cx='16' cy='16' r='5' fill='%23533afd'/></svg>" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;1,14..32,300&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Scroll progress indicator -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav class="nav-stripe" id="navStripe">
+  <div class="nav-stripe__inner">
+    <a href="#top" class="nav-logo" aria-label="IDM ホーム">
+      <div class="nav-logo__mark" aria-hidden="true"></div>
+      <span>IDM</span>
+    </a>
+    <div class="nav-links">
+      <a href="#method">事業</a>
+      <a href="#fields">実績</a>
+      <a href="#tech">技術</a>
+      <a href="#vision">理念</a>
+      <a href="#join">仲間募集</a>
+    </div>
+    <div class="nav-cta-group">
+      <a href="#about" class="btn btn--ghost" style="font-size:14px;padding:6px 14px;">会社概要</a>
+      <a href="#contact" class="btn btn--primary" style="font-size:14px;padding:6px 14px;">お問い合わせ</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO — Gradient Mesh + Two-column layout
+     ============================================================ -->
+<section class="hero-stripe" id="top">
+
+  <!-- ── Gradient Mesh backdrop: cream / sherbet / lavender / indigo / ruby ── -->
+  <div class="hero-mesh" aria-hidden="true">
+    <svg class="hero-mesh__svg" viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <filter id="blur-xl" x="-80%" y="-80%" width="260%" height="260%">
+          <feGaussianBlur stdDeviation="90" />
+        </filter>
+        <filter id="blur-lg" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="70" />
+        </filter>
+        <filter id="blur-md" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="50" />
+        </filter>
+        <linearGradient id="fade-white" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="45%" stop-color="#ffffff" stop-opacity="0" />
+          <stop offset="100%" stop-color="#ffffff" stop-opacity="1" />
+        </linearGradient>
+      </defs>
+
+      <!-- Base cream warm wash — left anchor -->
+      <ellipse class="blob-1"
+        cx="160" cy="380" rx="600" ry="440"
+        fill="#f5e9d4" fill-opacity=".9"
+        filter="url(#blur-xl)" />
+
+      <!-- Sherbet orange mid-left -->
+      <ellipse class="blob-2"
+        cx="420" cy="200" rx="380" ry="300"
+        fill="#f5c090" fill-opacity=".65"
+        filter="url(#blur-lg)" />
+
+      <!-- Lavender center -->
+      <ellipse class="blob-1"
+        cx="760" cy="260" rx="460" ry="340"
+        fill="#c8befa" fill-opacity=".7"
+        filter="url(#blur-xl)" />
+
+      <!-- Electric indigo right -->
+      <ellipse class="blob-3"
+        cx="1140" cy="200" rx="500" ry="380"
+        fill="#533afd" fill-opacity=".3"
+        filter="url(#blur-xl)" />
+
+      <!-- Ruby accent far right -->
+      <ellipse class="blob-2"
+        cx="1380" cy="340" rx="320" ry="260"
+        fill="#ea2261" fill-opacity=".22"
+        filter="url(#blur-lg)" />
+
+      <!-- Magenta pink pop — upper right -->
+      <ellipse class="blob-1"
+        cx="1240" cy="120" rx="200" ry="160"
+        fill="#f96bee" fill-opacity=".25"
+        filter="url(#blur-md)" />
+
+      <!-- Additional warm top-center softener -->
+      <ellipse class="blob-3"
+        cx="620" cy="80" rx="280" ry="180"
+        fill="#fde8a0" fill-opacity=".45"
+        filter="url(#blur-md)" />
+
+      <!-- White fade to canvas — bottom 40% -->
+      <rect x="0" y="0" width="1440" height="900" fill="url(#fade-white)" />
+    </svg>
+  </div>
+
+  <!-- ── Two-column content ── -->
+  <div class="hero-stripe__inner">
+
+    <!-- Left: Hero copy -->
+    <div class="hero-copy">
+      <span class="hero-copy__eyebrow reveal">International Making Dots</span>
+      <h1 class="hero-copy__headline reveal">構想を、<br />成果に変える。</h1>
+      <p class="hero-copy__lead reveal">
+        整理し、言葉にし、戦略を描き、数値で測り、検証する。<br />
+        株式会社IDMは、企業と地域の課題解決に、<br />
+        最初から最後まで伴走します。
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#contact" class="btn btn--primary">事業のご相談</a>
+        <a href="#method" class="btn btn--text">私たちの仕事を見る &thinsp;→</a>
+      </div>
+    </div>
+
+    <!-- Right: Dashboard mockup -->
+    <div class="hero-mockup reveal">
+      <div class="dashboard-card">
+        <div class="dashboard-card__header">
+          <div class="dashboard-chrome-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="dashboard-card__title">IDM — Project Console</span>
+        </div>
+        <div class="dashboard-card__body">
+          <div class="dashboard-metric-row">
+            <div class="dashboard-metric">
+              <div class="dashboard-metric__label">設立</div>
+              <div class="dashboard-metric__value">2017</div>
+              <div class="dashboard-metric__delta">別府 · BtoB</div>
+            </div>
+            <div class="dashboard-metric">
+              <div class="dashboard-metric__label">事業領域</div>
+              <div class="dashboard-metric__value">4</div>
+              <div class="dashboard-metric__delta">Fields</div>
+            </div>
+            <div class="dashboard-metric">
+              <div class="dashboard-metric__label">Process</div>
+              <div class="dashboard-metric__value">5</div>
+              <div class="dashboard-metric__delta">STEPS</div>
+            </div>
+          </div>
+          <div class="dashboard-steps-list">
+            <div class="dashboard-step-row">
+              <div class="step-badge step-badge--done">01</div>
+              <span class="dashboard-step-label">整理 — 課題の構造化</span>
+              <span class="dashboard-step-status dashboard-step-status--done">Done</span>
+            </div>
+            <div class="dashboard-step-row">
+              <div class="step-badge step-badge--done">02</div>
+              <span class="dashboard-step-label">言語化 — 合意形成の土台</span>
+              <span class="dashboard-step-status dashboard-step-status--done">Done</span>
+            </div>
+            <div class="dashboard-step-row">
+              <div class="step-badge step-badge--active">03</div>
+              <span class="dashboard-step-label">戦略設計 — ロードマップ</span>
+              <span class="dashboard-step-status dashboard-step-status--active">Active</span>
+            </div>
+            <div class="dashboard-step-row">
+              <div class="step-badge">04</div>
+              <span class="dashboard-step-label">数値設計 — KPI設定</span>
+              <span class="dashboard-step-status dashboard-step-status--next">Next</span>
+            </div>
+            <div class="dashboard-step-row">
+              <div class="step-badge">05</div>
+              <span class="dashboard-step-label">効果検証 — 成果の最大化</span>
+              <span class="dashboard-step-status dashboard-step-status--pending">Pending</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── Trust strip — bottom of hero ── -->
+  <div class="trust-strip">
+    <div class="trust-strip__inner">
+      <div class="trust-item reveal">
+        <span class="trust-item__value">2017</span>
+        <span class="trust-item__label">設立・別府発</span>
+      </div>
+      <div class="trust-item reveal">
+        <span class="trust-item__value">4</span>
+        <span class="trust-item__label">事業領域</span>
+      </div>
+      <div class="trust-item reveal">
+        <span class="trust-item__value">5 STEPS</span>
+        <span class="trust-item__label">独自メソッド</span>
+      </div>
+      <div class="trust-item reveal">
+        <span class="trust-item__value">BtoB&thinsp;/&thinsp;自治体</span>
+        <span class="trust-item__label">伴走支援</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     01 THE ISSUE
+     ============================================================ -->
+<section class="section-issue" id="issue">
+  <div class="container">
+    <div class="issue-left">
+      <div class="issue-num">01</div>
+      <span class="eyebrow eyebrow--indigo reveal">THE ISSUE</span>
+      <h2 class="issue-headline reveal">多くの「やりたい」は、<br />形にならないまま終わる。</h2>
+    </div>
+    <div class="issue-right">
+      <p class="issue-body reveal">
+        アイデアや構想はある。けれど、それを <strong>誰にでも伝わる言葉にする力</strong>、
+        <strong>成果を測る設計</strong>、そして <strong>続けていく仕組み</strong> が欠けていると、
+        取り組みは途中で立ち消えになります。
+      </p>
+      <p class="issue-body reveal">
+        IDMは、その三つを補い、構想を実行と成果へつなぎます。整理から始まり、言語化し、戦略を立て、数値で測り、検証する——一気通貫の伴走で、「やりたい」を確かな成果に変えます。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     02 WHO WE ARE — cream interlude
+     ============================================================ -->
+<section class="section-who" id="define">
+  <div class="container">
+    <span class="eyebrow reveal">02 · WHO WE ARE</span>
+    <p class="who-statement reveal">
+      一社ごと、一人ごとの「個性」に光を当て、<br />
+      <em>可視化</em>し、その<em>価値を最大化</em>する。
+    </p>
+    <p class="who-sub reveal">
+      私たちは、ばらばらに散らばった「やりたい」という点を整理し、線でつなぎ、
+      確かな成果へと育てる伴走者です。マーケティングの一部だけ、戦略の一部だけ、ではなく、
+      課題の整理から成果の検証まで、一気通貫で関わります。
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================
+     03 OUR METHOD — 5 steps
+     ============================================================ -->
+<section class="section-method" id="method">
+  <div class="container">
+    <div class="method-head">
+      <span class="eyebrow eyebrow--indigo reveal">03 · OUR METHOD</span>
+      <h2 class="method-title reveal">「やりたい」を、成果に変える<br />5つの工程。</h2>
+      <p class="method-intro reveal">場当たり的な施策ではなく、再現性のある一連のプロセスとして提供します。</p>
+    </div>
+
+    <div class="steps-grid">
+      <div class="step-card reveal">
+        <span class="step-num">01</span>
+        <h3 class="step-name">整理</h3>
+        <p class="step-desc">絡み合った要望や課題を、ひとつずつ切り分ける。論点を構造化し、本当に解くべき問いを定めます。</p>
+      </div>
+      <div class="step-card reveal">
+        <span class="step-num">02</span>
+        <h3 class="step-name">言語化</h3>
+        <p class="step-desc">曖昧な構想を、関係者の誰もが同じ絵を描ける言葉にする。合意形成と意思決定の土台をつくります。</p>
+      </div>
+      <div class="step-card reveal">
+        <span class="step-num">03</span>
+        <h3 class="step-name">戦略設計</h3>
+        <p class="step-desc">限られた資源を、最も効果の大きい一手に集中させる。実行可能な道筋とロードマップに落とし込みます。</p>
+      </div>
+      <div class="step-card reveal">
+        <span class="step-num">04</span>
+        <h3 class="step-name">数値設計</h3>
+        <p class="step-desc">何をもって成功とするか、指標とKPIを先に定める。成果が測れる状態を、施策の前に用意します。</p>
+      </div>
+      <div class="step-card reveal">
+        <span class="step-num">05</span>
+        <h3 class="step-name">効果検証</h3>
+        <p class="step-desc">数値で結果を確かめ、改善を重ねる。一度きりで終わらせず、再現性のある成果へと育てます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     04 FIELDS & OUTCOMES
+     ============================================================ -->
+<section class="section-fields" id="fields">
+  <div class="container">
+    <div class="fields-head">
+      <span class="eyebrow eyebrow--indigo reveal">04 · FIELDS &amp; OUTCOMES</span>
+      <h2 class="fields-title reveal">手がけてきた、<br />領域と成果の型。</h2>
+      <p class="fields-note reveal">守秘のため個別の社名は伏せています。繰り返し成果を出してきた領域と、その型をご紹介します。</p>
+    </div>
+    <div class="fields-grid">
+      <article class="field-card reveal">
+        <div class="field-card__icon">
+          <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 2L2.5 6.5v9h13v-9L9 2z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7 18v-5h4v5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="field-num">FIELD 01</span>
+        <h3 class="field-name">事業開発・業務変革</h3>
+        <p class="field-desc">AI・デジタルを用いた業務の再設計（BPR / BPO）、新規事業の立ち上げ支援。</p>
+        <span class="field-tagline">曖昧な構想を、実行できる計画へ</span>
+      </article>
+      <article class="field-card reveal">
+        <div class="field-card__icon">
+          <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 4h14M2 9h9M2 14h11" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="field-num">FIELD 02</span>
+        <h3 class="field-name">マーケティング・プロモーション</h3>
+        <p class="field-desc">企画・動画・SNS・Web・記事・多言語翻訳まで、伝える設計を一気通貫で。</p>
+        <span class="field-tagline">「伝わらない」を、「届く」へ</span>
+      </article>
+      <article class="field-card reveal">
+        <div class="field-card__icon">
+          <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="1.3"/>
+            <path d="M9 5.5v3.5l2.5 2.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="field-num">FIELD 03</span>
+        <h3 class="field-name">リサーチ・可視化</h3>
+        <p class="field-desc">顧客・ユーザーの声を集め、意思決定に使えるデータへと翻訳する。</p>
+        <span class="field-tagline">勘や思い込みを、根拠へ</span>
+      </article>
+      <article class="field-card reveal">
+        <div class="field-card__icon">
+          <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 15V9M6 15V6M9 15V11M12 15V4M15 15V2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="field-num">FIELD 04</span>
+        <h3 class="field-name">教育・人材育成</h3>
+        <p class="field-desc">プログラミングや情報リテラシーの出前授業など、次世代に学びの機会を。</p>
+        <span class="field-tagline">一人の興味に、最初の機会を</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     04.5 TECHNOLOGY — dark navy + console mockup
+     ============================================================ -->
+<section class="section-tech" id="tech">
+  <div class="container">
+    <div class="tech-inner">
+
+      <!-- Left: copy -->
+      <div class="tech-copy">
+        <span class="eyebrow eyebrow--light reveal">04.5 · TECHNOLOGY</span>
+        <h2 class="tech-title reveal">技術は、いちばん<br />雄弁な実績だ。</h2>
+        <p class="tech-body reveal">
+          このサイト自体が、私たちの仕事の証明です。WebGLによる別府の湯けむり表現、
+          AIを用いた業務設計、データの可視化——「作れること」を、見て、触れて、確かめてください。
+        </p>
+        <div class="tech-tags reveal">
+          <span class="tech-tag">WebGL / シェーダー表現</span>
+          <span class="tech-tag">AI・自動化 / BPR・BPO</span>
+          <span class="tech-tag">データ可視化・ダッシュボード</span>
+          <span class="tech-tag">Web制作 / インタラクション設計</span>
+        </div>
+      </div>
+
+      <!-- Right: console / IDE mockup -->
+      <div class="console-card reveal">
+        <div class="console-header">
+          <div class="console-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="console-tab">idm-project.sh</span>
+        </div>
+        <div class="console-body">
+          <div class="console-line">
+            <span class="console-prompt">$</span>
+            <span class="console-cmd">idm init <span class="console-tag-inline">--client "御社"</span></span>
+          </div>
+          <div class="console-output">✓ 課題を整理しています...</div>
+          <div class="console-line">
+            <span class="console-prompt">$</span>
+            <span class="console-cmd">idm clarify <span class="console-tag-inline">--stakeholders all</span></span>
+          </div>
+          <div class="console-output">✓ 言語化が完了しました</div>
+          <div class="console-line">
+            <span class="console-prompt">$</span>
+            <span class="console-cmd">idm strategy <span class="console-tag-inline">--focus one-point</span></span>
+          </div>
+          <div class="console-output">→ ロードマップを生成中...</div>
+          <div class="console-line">
+            <span class="console-prompt">$</span>
+            <span class="console-cmd">idm measure <span class="console-tag-inline">--kpi success</span></span>
+          </div>
+          <div class="console-output">✓ KPI設定完了</div>
+          <div class="console-line">
+            <span class="console-prompt">$</span>
+            <span class="console-cmd">idm verify <span class="console-tag-inline">--iterate true</span></span>
+          </div>
+          <div class="console-output">✓ 成果を検証中... <span style="color:#f96bee">●</span> live</div>
+          <br />
+          <div class="console-line">
+            <span class="console-prompt" style="color:rgba(255,255,255,.25)">#</span>
+            <span class="console-comment">やりたいが、成果になる。</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     05 PHILOSOPHY / MVV
+     ============================================================ -->
+<section class="section-vision" id="vision">
+  <div class="container">
+    <span class="eyebrow eyebrow--indigo reveal">05 · PHILOSOPHY</span>
+    <p class="vision-lead reveal">世界は、せまい。</p>
+    <p class="vision-body reveal">
+      落ち着いて見渡せば、自分に関係のないものはなく、手が届かない場所もない。<br />
+      想像力を研ぎ澄ませば、違う世界に住む者同士も、互いの壁を超えられる。
+    </p>
+    <div class="mvv-grid">
+      <div class="mvv-card reveal">
+        <span class="mvv-key">MISSION</span>
+        <p class="mvv-text">個性が"つながる"回路を設計する。異なる才能を、仕組みとテクノロジーで接続する。</p>
+      </div>
+      <div class="mvv-card reveal">
+        <span class="mvv-key">VISION</span>
+        <p class="mvv-text">すべての個性に、スポットライトを。正しく可視化され、価値が最大化される状態をつくる。</p>
+      </div>
+      <div class="mvv-card reveal">
+        <span class="mvv-key">VALUE</span>
+        <p class="mvv-text">すべて自分ごと。大きく考える。変数はどこか——影響できる一点に集中する。</p>
+      </div>
+    </div>
+    <p class="vision-beppu reveal">
+      中期テーマ「<em>別府孝行</em>」——お世話になった大分・別府への、本気の恩返しを志として。
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================
+     06 JOIN US
+     ============================================================ -->
+<section class="section-join" id="join">
+  <div class="container">
+    <div class="join-grid">
+      <div>
+        <span class="eyebrow eyebrow--indigo reveal">06 · JOIN US</span>
+        <h2 class="join-title reveal">専門性という一点を持つ方と、<br />プロジェクトを組みます。</h2>
+      </div>
+      <div>
+        <p class="join-body reveal">
+          IDMは少人数の会社です。けれど一人では終わりません。プロジェクトごとに、最適な個性が集まってチームになる。
+          私たち自身が「個性がつながる回路」そのものです。業務委託として、共に課題解決に取り組む仲間を募集しています。
+        </p>
+        <ul class="join-list">
+          <li class="reveal">「やりたい」を整理し、言葉にできる方</li>
+          <li class="reveal">数値で語り、成果まで見届けられる方</li>
+          <li class="reveal">専門性という、確かな一点を持つ方</li>
+        </ul>
+        <a href="mailto:contact@idm-drone.co.jp?subject=パートナー応募" class="btn btn--secondary reveal">業務委託パートナーとして話す</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     07 CTA — deep navy band
+     ============================================================ -->
+<section class="section-cta" id="contact">
+  <div class="container">
+    <h2 class="cta-title reveal">その一点を、ご一緒に。</h2>
+    <p class="cta-lead reveal">事業のご相談も、仲間としての参加も、まずはお気軽にご連絡ください。</p>
+    <div class="cta-actions reveal">
+      <a href="mailto:contact@idm-drone.co.jp?subject=ご相談" class="btn btn--light">事業のご相談</a>
+      <a href="mailto:contact@idm-drone.co.jp?subject=パートナー応募" class="btn btn--ghost-light">仲間として参加する</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer-stripe" id="about">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="footer-logo__mark" aria-hidden="true"></div>
+          <span class="footer-logo__name">株式会社IDM</span>
+        </div>
+        <p class="footer-tagline">構想を、成果に変える。</p>
+      </div>
+      <dl class="footer-dl">
+        <div><dt>商号</dt><dd>株式会社IDM（International Making Dots）</dd></div>
+        <div><dt>設立</dt><dd>2017年5月26日</dd></div>
+        <div><dt>所在地</dt><dd>大分県別府市駅前本町9-20</dd></div>
+        <div><dt>体制</dt><dd>少人数 ＋ プロジェクト型の業務委託チーム</dd></div>
+        <div><dt>事業内容</dt><dd>事業開発・業務変革 / マーケティング / リサーチ / 教育</dd></div>
+        <div><dt>お問い合わせ</dt><dd>contact@idm-drone.co.jp</dd></div>
+      </dl>
+    </div>
+    <p class="footer-copy">© 2017–2026 株式会社IDM</p>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
